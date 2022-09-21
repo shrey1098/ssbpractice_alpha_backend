@@ -1,0 +1,58 @@
+<!-- html for documentaion of the apienpoints-->
+
+<html>
+<head>
+    <title>SSBPractice API Doc</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- nav bar with title SSBPractice Api and nav buttons-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">SSBPractice API</a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="btn btn-outline-secondary" href="#">About Developer</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- main content of the page-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>SSBPractice API</h1>
+                <p>SSBPractice API is a RESTful API that provides data for the SSBPractice website. The API is used to fetch data from the database and send it to the website. The API is also used to update the database with the data sent by the website.</p>
+                <p>The API is hosted on AWS and is available at <a href="https://ssbpractice.click/">https://ssbpractice.click/</a></p>
+                <p>The API v1.0 is in production and v2.0 is in development</p>
+                <h2>Endpoints</h2>
+                <p>The API has the following endpoints:</p>
+                <ul>
+                    <li><a href="#/wat">/wat</a></li>
+                </ul>
+                <h3>/wat</h3>
+                <p>Get 60 words for wat</p>
+                <p>Method: GET</p>
+                <p>URL: <a href="https://ssbpractice.click/wat">https://ssbpractice.click/wat</a></p>
+                <!-- sample response-->
+                <p>Sample Response: <code>{
+                    1: {word:'battle'}
+                     2:{word:'war'}
+                    }</code></p>
+
+                <h3>/srt</h3>
+                <p>Get 60 situations for srt</p>
+                <p>Method: GET</p>
+                <p>URL: <a href="https://ssbpractice.click/srt">https://ssbpractice.click/srt</a></p>
+                <!-- sample response-->
+                <p>Sample Response: <code>{
+                    1: {situation:'Situation 1'}
+                     2:{situation:'situation 2'}
+                    }</code></p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
