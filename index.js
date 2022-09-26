@@ -12,6 +12,8 @@ import { connectDB } from './db/connect.js';
 //router imports
 import { watRouter } from './routes/wat.js';
 import { srtRouter } from './routes/srt.js';
+import { blogRouter } from './routes/blog.js';
+import { blogAdminRouter } from './routes/blogAdmin.js';
 
 
 const app = express();
@@ -34,8 +36,10 @@ app.get('/', (req, res) => {
     // render html page 
     res.sendFile(__dirname + '/views/doc.html');
 })
+app.use('/blogAdmin', blogAdminRouter);
 app.use('/wat', watRouter);
 app.use('/srt', srtRouter);
+app.use('/blog', blogRouter);
 
 
 
