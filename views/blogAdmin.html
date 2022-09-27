@@ -78,6 +78,10 @@
             let deleteButton = document.createElement('button');
             deleteButton.className = 'btn btn-danger';
             deleteButton.innerHTML = 'Delete';
+            //create p to show view
+            let viewPost = document.createElement('p');
+            viewPost.className = 'card-text',
+            viewPost.innerHTML = data[i].views;
 
             deleteButton.setAttribute('onclick', 'deletePost('+data[i].id+')');
             let postButton = document.createElement('button');
