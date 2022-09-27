@@ -70,6 +70,9 @@
             let postAuthor = document.createElement('p');
             postAuthor.className = 'card-text';
             postAuthor.innerHTML = data[i].author;
+            let postViews = document.createElement('p');
+            postViews.className = 'card-text',
+            postViews.innerHTML = data[i].views;
             // create button to view and delete
             let viewButton = document.createElement('button');
             viewButton.className = 'btn btn-primary';
@@ -79,9 +82,7 @@
             deleteButton.className = 'btn btn-danger';
             deleteButton.innerHTML = 'Delete';
             //create p to show view
-            let viewPost = document.createElement('p');
-            viewPost.className = 'card-text',
-            viewPost.innerHTML = data[i].views;
+            
 
             deleteButton.setAttribute('onclick', 'deletePost('+data[i].id+')');
             let postButton = document.createElement('button');
@@ -89,7 +90,7 @@
             postButton.innerHTML = 'Edit';
             postButton.setAttribute('onclick', 'editPost(' + data[i].id + ')');
             postBody.appendChild(postTitle);
-            postBody.appendChild(postText);
+            postBody.appendChild(postViews);
             postBody.appendChild(postDate);
             postBody.appendChild(postAuthor);
             postBody.appendChild(postButton);
