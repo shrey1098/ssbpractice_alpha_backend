@@ -18,7 +18,7 @@ const getPost = async (req, res) => {
 const getPosts = async (req, res) => {
     try{
         // get last 20 posts return only title, author, date and _id
-        const posts = await Post.find().sort({date: -1}).limit(20).select("title author date _id");
+        const posts = await Post.find().sort({date: -1}).limit(20).select("title author date _id views");
         res.status(200).json(posts);
 
     }
