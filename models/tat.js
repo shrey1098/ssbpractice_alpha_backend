@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const tatSchema = new mongoose.Schema({
-    image:{type: String, required:'URL cant nb empty'},
+    image:{type: String, required:'URL cant be empty'},
     date: {type: Date, default: Date.now},
 });
 
@@ -12,4 +12,4 @@ tatSchema.path('image').validate((val)=> {
 
 const Tat = mongoose.model("Tat", tatSchema);
 
-export default Tat;
+export {Tat};

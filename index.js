@@ -12,6 +12,7 @@ import { connectDB } from './db/connect.js';
 //router imports
 import { watRouter } from './routes/wat.js';
 import { srtRouter } from './routes/srt.js';
+import { tatRouter } from './routes/tat.js';
 import { blogRouter } from './routes/blog.js';
 import { blogAdminRouter } from './routes/blogAdmin.js';
 
@@ -39,6 +40,7 @@ app.get('/', (req, res) => {
 app.use('/blogAdmin', blogAdminRouter);
 app.use('/wat', watRouter);
 app.use('/srt', srtRouter);
+app.use('/tat', tatRouter);
 app.use('/blog', blogRouter);
 
 
