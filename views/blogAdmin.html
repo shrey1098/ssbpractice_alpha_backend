@@ -72,7 +72,7 @@
             postAuthor.innerHTML = data[i].author;
             let postViews = document.createElement('p');
             postViews.className = 'card-text',
-            postViews.innerHTML = data[i].views;
+            postViews.innerHTML = 'views: ' + data[i].views;
             // create button to view and delete
             let viewButton = document.createElement('button');
             viewButton.className = 'btn btn-primary';
